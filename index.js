@@ -6,7 +6,7 @@ const method = process.argv[2];
 let array = [1,2,3];
 
 // Callback hell
-const callCalback = () => {
+const callCallback = () => {
     addToArrayCallback(4, array, err => {
         if (err) return console.log(err.message)
         console.log(array)
@@ -52,7 +52,7 @@ const callAsync = () => {
 
 switch (method) {
     case 'callback':
-        callCalback();
+        callCallback();
         break;
     case 'promise':
         callPromise();
